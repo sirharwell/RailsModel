@@ -1,2 +1,5 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h1> Contacts </h1>
+<% @pages.each do |contact| %>
+  <h2><%= contact.title %></h2>
+  <%= link_to 'Show Contact', pages_path(contact) %>
+<% end %>

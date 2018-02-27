@@ -1,17 +1,17 @@
 class PagesController < ApplicationController
   def index
-    @pages = Page.all
+    @pages = Contact.all
   end
 
   def show
-    @page = Page.find(params[:id])
+    @page = Contact.find(params[:id])
   end
 
   def new
-    @page = Page.new
+    @page = Contact.new
   end
 
   def edit
-    @page = Page.edit
+    @page = Contact.edit
   end
 end
